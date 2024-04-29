@@ -47,5 +47,5 @@ jobs:
         crate: cargo-binutils
         version: latest
         use-tool-cache: true
-    - name: Build helloworld
+    - name: Build net/httpclient
       run: CURRENT_DIR=`pwd` make ARCH=${{ matrix.arch }} A=apps/net/httpclient
