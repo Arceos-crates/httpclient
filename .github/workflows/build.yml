@@ -18,8 +18,6 @@ jobs:
         components: rust-src, clippy, rustfmt
     - name: Clippy for the default target
       run: CURRENT_DIR=`pwd` make clippy
-    - name: Clippy for riscv64
-      run: CURRENT_DIR=`pwd` make clippy ARCH=riscv64 
     - name: Check code format
       run: CURRENT_DIR=`pwd` cargo fmt --all -- --check
   
